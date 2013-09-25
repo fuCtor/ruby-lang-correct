@@ -1,13 +1,5 @@
 #encoding: UTF-8
 
-#
-# Оригинальный код (Original code):
-# @link     http://code.google.com/p/php-lang-correct/
-# @license  http://creativecommons.org/licenses/by-nc-sa/3.0/
-# @author   Nasibullin Rinat
-# @version  1.4.3
-#
-
 
 class LangCorrect
   #английский (all)
