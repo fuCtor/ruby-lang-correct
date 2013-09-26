@@ -2660,8 +2660,8 @@ class LangCorrect
     #http://ru.wikipedia.org/wiki/Диакритические_знаки
     #text = text.force_encoding('binary').gsub(/[^x00-\x7F]/n, '').to_s
 
-    s = _parse1(text.force_encoding('binary')).force_encoding('UTF-8')
-
+    s = _parse1(text.force_encoding('binary')).force_encoding('UTF-8')       
+    
     [s, @words]
   end
 
@@ -2759,7 +2759,7 @@ class LangCorrect
     end
 
     if( s != word)
-      @words[word] = s
+      @words[word.force_encoding('UTF-8')] = s.force_encoding('UTF-8')
     end
 
     s
@@ -2827,8 +2827,6 @@ class LangCorrect
     #проверка на 3 гласные буквы подряд; пример: длиннош{еее}, зм{еео}бразный
     matches = word.match(/(?:#{VOWEL_LC[lang]}){3}/)
     return true if matches && !VOWELS3_LC[lang].include?(matches[0])
-
-
 
     #шаг 3.
     (length-1).times do |pos|

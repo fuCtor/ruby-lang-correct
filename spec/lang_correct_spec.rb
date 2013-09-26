@@ -1,6 +1,6 @@
 #encoding: UTF-8
 require "rspec"
-require '../lang_correct.rb'
+require './lang_correct.rb'
 
 
 describe LangCorrect do
