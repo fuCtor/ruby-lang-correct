@@ -1,6 +1,5 @@
 ruby-lang-correct
 =================
-[![Code Climate](https://codeclimate.com/github/fuCtor/ruby-lang-correct.png)](https://codeclimate.com/github/fuCtor/ruby-lang-correct)
 
 Automatic correction of the language for words in the text because of the wrong keyboard layout
 
